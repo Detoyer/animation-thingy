@@ -1,0 +1,76 @@
+body{
+	background-color: white;
+}
+
+#container {
+	width: 100%;
+	height: 500px;
+	border-bottom: 10px solid black;
+	overflow: visible;
+	position: relative;
+	z-index: 100;
+}
+
+#nissan {
+	width: 28%;
+	position: fixed;
+	bottom: 25%;
+	right: 50%; 
+	z-index: 100;
+	animation-name: nissan;
+	animation-duration: 7s;
+	animation-iteration-count: 99;
+}
+
+#mountain {
+	width: 40%;
+	position: absolute;
+	bottom: 0;
+	right: -50%;
+
+	animation-name: mountain;
+	animation-duration: 7s;
+	animation-iteration-count: 99;
+}
+
+#porsche {
+	width: 24%;
+	position: absolute;
+	bottom: -5%;
+	right: 50%;
+	z-index: 9999;
+}
+
+#futureWorksheet {
+	width: 19%;
+	position: absolute;
+	bottom: -1%;
+	animation-name: tree;
+	animation-duration: 3s;
+	animation-iteration-count: 99;
+}
+
+@keyframes mountain {
+	to {
+		transform: translateX(-2500px);
+	}
+}
+
+@keyframes nissan {
+	from {
+		right: -400px;
+	}
+	to {
+		right: 20000px;
+	}
+}
+
+@keyframes tree {
+	from {
+		transform: translate(1350px);
+	}
+	to {
+		transform:translate(-500px);
+	}
+}
+
